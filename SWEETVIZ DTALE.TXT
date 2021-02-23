@@ -1,0 +1,28 @@
+pip install sweetviz
+
+import pandas as  pd
+df = pd.read_csv('Advertising.csv')
+
+
+# importing sweetviz
+import sweetviz as sv
+#analyzing the dataset
+advert_report = sv.analyze(df)
+#display the report
+advert_report.show_html('Advertising.html')
+
+
+df1 = sv.compare(df[100:], df[:100])
+df1.show_html('Compare.html')
+........................................................
+
+
+
+# conda
+conda install dtale -c conda-forge
+
+# pip
+pip install -U dtale
+
+
+
